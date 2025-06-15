@@ -34,4 +34,15 @@ To execute the laravel app in this repository
     ```bash
     php artisan serve
     ```
-   
+4.  Create database table for posts
+    ```bash
+    php artisan make:migrate create_post_table
+    ```
+5.  Create a post model to interact with the posts table
+    ```bash
+    php artisan make:model Post
+    ```
+6.  Create a Post controller to handle requests related to post
+    ```bash
+    php artisan make:controller PostController --resource
+    ```
